@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+::selection{
+    background-color: #f5a6ba;
+    color: #fff;
+}
+
+/*NAVIGATION BAR*/
+nav {
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    text-align: center;
+    z-index: 999;
+    transition: 0.5s ease-in-out background-color,
+                0.5s ease-in-out box-shadow;
+}
+
+nav .navbar {
+   justify-content: space-between;
+}
+
+.navbar .logo {
+    text-decoration: none;
+    cursor: default;
+    padding: 25px 30px;
+    text-align: center;
+    transition: .5s ease-in-out;
+}
+.navbar .nav-links{
+    display: inline-flex;
+}
+.nav-links li {
+    list-style: none;
+    padding: 25px 10px;
+}
+.nav-links li .mv{
+    margin-left: 20px;
+}
+.nav-links li a {
+    color: #f5a6ba;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 7px 20px;
+    border-radius: 50px;
+    transition: all .4s ease-in-out;
+}
+
+.nav-links li a:hover {
+    color: #FFFFFF;
+    background: #f5a6ba;
+}
+.drop-menu li {
+    list-style: none;
+    padding: 2px 10px;
+}
+.nav-links .drop-menu li a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 1px 10px;
+    border-radius: 50px;
+    transition: all .4s ease;
+}
+
+.nav-links .drop-menu li a:hover{
+    color: #010101;
+    background: #f5a6ba;
+}
+
+.nav-links .drop-menu{
+    width: 120px;
+    top: 60px;
+    line-height: 30px;
+    position: absolute;
+    padding: 10px 0px;
+    opacity: 0;
+    visibility: hidden;
+    background: #ffffffa1;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.nav-links li:hover .drop-menu{
+    opacity: 1;
+    top: 80px;
+    visibility: visible;
+    transition: all .5s ease;
+}
+
+.drop-menu li a{
+    display: block;
+    padding: 0 0 0px 15px;
+    font-weight: 400px;
+    border-radius: 0px;
+}
+
+.active_nav {
+    justify-content: space-between;
+    background: linear-gradient(#32323265, #a3a3a358,#c3c3c383, #a3a3a358, #32323265);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    transition: .5s ease-in-out;
+ }
+ 
+ .active_nav .logo {
+     filter: saturate(0) brightness(0.6) contrast(1.6);
+     text-decoration: none;
+     cursor: default;
+     padding: 25px 30px;
+     text-align: center;
+     transition: .5s ease-in-out;
+ }
+
+ .active_nav .nav-links li a {
+    color: #000000;
+    transition: .5s ease-in-out;
+ }
+
+ .active_nav .nav-links li a:hover{
+    color: #FFFFFF;
+    background: #f5a6ba;
+    transition: .5s ease-in-out;
+ }
+/*END OF NAVBAR*/
+
+.musicplatforms{
+    position: absolute;
+    z-index: 10;
+    bottom: 32%;
+    right: 30px;
+    justify-content: space-between;
+}
+.mlogo{
+    padding: 10px;
+    color: #f394ab;
+    font-size: 30px;
+    transition: 0.5s ease-in-out;
+}
+
+.mlogo:hover{
+    padding: 10px;
+    color: #ffffff;
+}
+/*ABOUT*/
+.header{
+    position: relative;
+    height: 70vh;
+}
+
+/*Section1*/
+.section1{
+    position: relative;
+    width: 100%;
+    height: 291vh;
+    background-color: #f5a6ba;
+}
+
+.section1 h1{
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.section1 p{
+    font-size: 15px;
+}
+
+.discography {
+    background-color: #f7f7f7;
+    padding: 70px 100px;
+}
+.achievements{
+    background-color: #e2e2e2;
+    padding: 70px 100px;
+}
+
+.awards {
+    position: absolute;
+    z-index: 2;
+    top: 615px;
+    left: 800px;
+    padding: 70px 100px;
+}
+
+/*END OF Section1*/
+.references{
+    text-align: center;
+    justify-content: center;
+    background-color: #d5d5d5;
+    padding: 15px;
+}
+.references a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #010101;
+    transition: .3s ease-in-out;
+}
+.references a:hover{
+    color: #ffffff;
+}
+/*\FOOTER*/
+footer{
+    text-align: center;
+    margin-top: -7px;
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: 17vh;
+    background-color: #eaeaea;
+}
+.BL{
+    position: relative;
+    margin-top: 30px;
+    padding-bottom: 5px;
+  }
+footer p{
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    z-index: 7;
+    color: #000000;
+  }
+
+/*END OF FOOTER*/

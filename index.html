@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="Media\HomePageFiles\BLACKPINK CROWN ICON.png">
+    <title>The Phenomenal Pinks: BLACKPINK</title>
+</head>
+<body>
+<!--NAVIGATION BAR-->
+    <nav> 
+        <div class="navbar">
+            <ul class="nav-links"> 
+                <li><a class="mv" href="members.html">THE PINKS</a><li>
+                <a href="album.html">ALBUM</a></li>
+                </li>
+                    <div class="logo"><a href="index.html"><img src="Media/HomePageFiles/logo.png" alt="logo" width="210"></a></div>
+                <li><a href="musicvideo.html">MUSIC VIDEO</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </div>
+    </nav> 
+    <script>
+        const nav= document.querySelector('nav');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY >= 100) {
+                nav.classList.add('active_nav');
+            } else {
+                nav.classList.remove('active_nav');
+            }
+        })
+    </script>
+<!--End of NavBar-->
+
+<!--SECTION ONE--> 
+<section class="landingpage">
+    <video loop autoplay muted class="background"><source src="Media/HomePageFiles/BLACKPINK - PinkVenom Visualizer.mp4" type="video/mp4"></video>
+    <div class="overview">
+        <h3>The Phenomenal Pinks</h3>
+        <h1>BLACKPINK</h1>
+        <p><b>Blackpink</b> (Hangul: <b>블랙핑크</b>), stylized as <b>BLACKPINK</b> or <b>BLΛƆKPIИK</b>, 
+            is a South Korean girl group formed by YG Entertainment and the first girl group to debut under the same entertainment company seven years after 2NE1. 
+            The group consists of four members: Jennie, Lisa, Jisoo, and Rosé. They officially debuted on August 8, 2016 with the single album Square One. 
+            Blackpink's fans are called "<b>Blink</b>", a name which means the fans start with <b>Bl</b>ackpink and end with Blackp<b>ink</b>.
+        </p>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="cardcontainer" >
+                <div class="cardcontent">
+                    <h1>LISA</h1>
+                </div>
+                <img src="Media/HomePageFiles/Members/Lisa-Bornpink.jpg" alt="https://preview.redd.it/220906-blackpink-born-pink-individual-concept-poster-v0-zuqaqjmo12m91.jpg?width=1080&crop=smart&auto=webp&v=enabled&s=5388f8369cff66cf8c2bf5ee551bdaffd018a6a6">
+            </div>
+
+            <div class="cardcontainer">
+                <div class="cardcontent">
+                    <h1>ROSÉ</h1>
+                </div>
+                <img src="Media/HomePageFiles/Members/Rose-Bornpink.jpg" alt="https://preview.redd.it/220906-blackpink-born-pink-individual-concept-poster-v0-pv1mblmo12m91.jpg?width=1080&crop=smart&auto=webp&v=enabled&s=0ace2762d43831c348dfe016604f012095b29154">
+            </div>
+
+            <div class="cardcontainer">
+                <div class="cardcontent">
+                    <h1>JENNIE</h1>
+                </div>
+                <img src="Media/HomePageFiles/Members/Jennie-Bornpink.jpeg" alt="https://preview.redd.it/220906-blackpink-born-pink-individual-concept-poster-v0-q3gozjmo12m91.jpg?width=1080&crop=smart&auto=webp&v=enabled&s=705939bae30758f462e2f64e7e248ef64869ddb6">
+            </div>
+
+            <div class="cardcontainer">
+                <img src="Media/HomePageFiles/Members/Jisoo-Bornpink.jpeg" alt="https://preview.redd.it/220906-blackpink-born-pink-individual-concept-poster-v0-stjackmo12m91.jpg?width=1080&crop=smart&auto=webp&v=enabled&s=5ddf948d327f3a7e5fedcad10e65809cfd57341d">
+                <div class="cardcontent">
+                    <h1>JISOO</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section2">
+        <img id="ListenNow" src="Media/HomePageFiles/title-music.png" alt="Listen Now" width="250">
+        <a class="Listen" href="https://open.spotify.com/album/7jaSNQUBJbvfbZHLNFrV7P?si=K3_ftOJbSuSR7CYdXMYqHA" target="0">
+        <div class="bornpink">
+        <img src="Media/HomePageFiles/BoxsetCover_Gray.jpeg" alt="https://cdn.shopify.com/s/files/1/0253/6400/4911/products/BoxsetCover_Gray.jpg?v=1681684901" width="400px">
+        </div>
+        <div class="bornpinkhover">
+           <img src="Media/HomePageFiles/BP_DigitalCover.jpg" alt="https://www.blackpinkmusic.com/files/2022/08/BP_DigitalCover_F_1000px-compressed.jpg" width="400px">
+            <h4>LATEST RELEASE</h4>
+            <h1>BORN PINK</h1></a>
+        </div>
+    
+        <div class="flowers">
+            <video width="523" height="295" id="flower"><source src="Media/MusicVidePageFiles/Video/JISOO - (FLOWER) M V.mp4" type="video/mp4" />
+                <script>
+                    var myFP = fluidPlayer(
+                        'flower',	{
+                    "layoutControls": {
+                        "controlBar": {
+                            "autoHideTimeout": 5,
+                            "animated": true,
+                            "autoHide": false,
+                            "playbackRates": [
+                                "x2",
+                                "x1.5",
+                                "x1",
+                                "x0.5"
+                            ]
+                        },
+                        "htmlOnPauseBlock": {
+                            "html": "",
+                            "height": null,
+                            "width": null
+                        },
+                        "autoPlay": false,
+                        "mute": true,
+                        "allowTheatre": true,
+                        "playPauseAnimation": true,
+                        "playbackRateEnabled": false,
+                        "allowDownload": false,
+                        "playButtonShowing": true,
+                        "fillToContainer": false,
+                        "primaryColor": "#f5a6ba;",
+                    "posterImage": "Media/MusicVidePageFiles/Pictures/Flower Thumnail.jpg"
+                    },
+                    "vastOptions": {
+                        "adList": [],
+                        "adCTAText": false,
+                        "adCTATextPosition": ""
+                    }
+                });
+                </script>
+        </div>
+    
+        <div class="flowerlink">
+            <a href="https://youtu.be/YudHcBIxlYw" target="0">View Full Video</a>
+        </div>
+
+    <div class="shutdown">
+        <video width="523" height="295" id="video-id"><source src="Media/MusicVidePageFiles/Video/BLACKPINK - Shut Down M V.mp4" type="video/mp4" />
+        <script>
+            var myFP = fluidPlayer(
+                'video-id',	{
+            "layoutControls": {
+                "controlBar": {
+                    "autoHideTimeout": 5,
+                    "animated": true,
+                    "autoHide": false,
+                    "playbackRates": [
+                        "x2",
+                        "x1.5",
+                        "x1",
+                        "x0.5"
+                    ]
+                },
+                "htmlOnPauseBlock": {
+                    "html": "",
+                    "height": null,
+                    "width": null
+                },
+                "autoPlay": false,
+                "mute": false,
+                "allowTheatre": true,
+                "playPauseAnimation": true,
+                "playbackRateEnabled": false,
+                "allowDownload": false,
+                "playButtonShowing": true,
+                "fillToContainer": false,
+                "primaryColor": "#f5a6ba;",
+		        "posterImage": "Media/MusicVidePageFiles/Pictures/Shutdown Thumnail.jpeg"
+            },
+            "vastOptions": {
+                "adList": [],
+                "adCTAText": false,
+                "adCTATextPosition": ""
+            }
+        });
+        </script>
+    </div>
+    <div class="shutdownlink">
+        <a href="https://youtu.be/POe9SOEKotk" target="0">View Full Video</a>
+    </div>
+
+</section>
+
+<section class="section3">
+    <div class="bornpinkwordtour">
+        <a href="https://blackpinkofficial.com/worldtourbornpink/" target="0"><video autoplay loop muted src="Media/HomePageFiles/BP_MainLogo_Loop.mp4" width="80%"></video></a>
+    </div>
+</section>
+
+<footer>
+    <video loop autoplay muted class="footerBg" width="900" src="Media\HomePageFiles\BG_BOTTOM_FANG.mp4"></video>
+        <a target="0" href="https://www.blackpinkmusic.com/"><img class="BL" src="Media\AboutPageFiles\Blackpink_logo.png" alt="BLACKPINK Logo" height="25"></a>
+        <a target="0" href="https://www.ygfamily.com/"><img class="BLyg" src="Media\AboutPageFiles\YG_Entertainment-logo.png" alt="YG Logo" height="25"></a>
+        <p>&copy; YG ENTERTAINMENT ALL RIGHTS RESERVED.<br> LUZANO, CHRISTIAN NICO  |  AYALA, MELISSA </p>
+</footer>
+</body>
+</html>

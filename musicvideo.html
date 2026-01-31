@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="Media\HomePageFiles\BLACKPINK CROWN ICON.png">
+    <title>The Phenomenal Pinks: BLACKPINK</title>
+    <script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="Css/swiper-bundle.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="Css/musicvideo.css" />
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+
+</head>
+  <body>
+    <!--NAVIGATION BAR-->
+    <nav> 
+      <div class="navbar">
+          <ul class="nav-links"> 
+            <li><a class="mv" href="members.html">THE PINKS</a></li>
+            <li><a href="album.html">ALBUM</a></li>
+                  <div class="logo"><a href="index.html"><img src="Media/HomePageFiles/logo.png" alt="logo" width="210"></a></div>
+            <li><a style="color: #ffffff; background-color: #f5a6ba;" href="musicvideo.html">MUSIC VIDEO</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+          </ul>
+      </div>
+  </nav> 
+  <script>
+      const nav= document.querySelector('nav');
+
+      window.addEventListener('scroll', () => {
+          if (window.scrollY >= 100) {
+              nav.classList.add('active_nav');
+          } else {
+              nav.classList.remove('active_nav');
+          }
+      })
+  </script>
+<!--End of NavBar-->
+<!--Social Media Platforms-->
+<div class="musicplatforms">
+
+  <a class="mlogo" target="0" href="https://open.spotify.com/artist/41MozSoPIsD1dJM0CLPjZF"><i class="fa-brands fa-spotify"></i></a>
+  <a class="mlogo" target="0" href="https://music.apple.com/us/artist/blackpink/1141774019"><i class="fa-brands fa-apple"></i></a>
+  <a class="mlogo" target="0" href="https://www.facebook.com/BLACKPINKOFFICIAL/"><i class="fa-brands fa-facebook"></i></a>
+  <a class="mlogo" target="0"href="https://www.tiktok.com/@bp_tiktok"><i class="fa-brands fa-tiktok"></i></a>
+  <a class="mlogo" target="0" href="https://www.instagram.com/blackpinkofficial/"><i class="fa-brands fa-instagram"></i></a>
+  <a class="mlogo" target="0" href="https://twitter.com/BLACKPINK"><i class="fa-brands fa-twitter"></i></a>
+  <a class="mlogo" target="0" href="https://www.youtube.com/BLACKPINKOFFICIAL"><i class="fa-brands fa-youtube"></i></a>
+  
+</div>
+<!--Banner-->
+  <section class="Banners">
+    <div class="bannercontainers">
+        <div class="wrappersbanner">
+            <a class="bannerref" href="https://youtu.be/YudHcBIxlYw" target="0"><img src="Media/MusicVidePageFiles/Pictures/Flower Banner.png" alt="https://cdn4.premiumread.com/?url=https://malaymail.com/malaymail/uploads/images/2023/04/01/103768.jpeg&w=800&q=100&f=jpg&t=2" class="bannerimg"></a>
+            <a class="bannerref" href="https://youtu.be/POe9SOEKotk" target="0"><img src="Media/MusicVidePageFiles/Pictures/Shutdown Banner.png" alt="https://kpoplife.com/wp-content/uploads/2022/12/BLACKPINK-BORN-PINK.jpeg" class="bannerimg"></a>
+            <a class="bannerref" href="https://youtu.be/gQlMMD8auMs" target="0"><img src="Media/MusicVidePageFiles/Pictures/Pink Venom Banner.png" alt="https://pbs.twimg.com/media/FZ2Ez27aUAAQRmH?format=jpg&name=large" class="bannerimg"></a>
+            <a class="bannerref" href="https://youtu.be/YudHcBIxlYw" target="0"><img src="Media/MusicVidePageFiles/Pictures/Flower Banner.png" alt="https://cdn4.premiumread.com/?url=https://malaymail.com/malaymail/uploads/images/2023/04/01/103768.jpeg&w=800&q=100&f=jpg&t=2" class="bannerimg"></a>
+        </div>
+    </div>
+  </section>
+<!--End of Banner-->
+<!--Background-->
+  <video width="100%" loop autoplay muted class="mvbg" src="Media/MusicVidePageFiles/Video/pinklight.mp4"></video>
+<!--Video Slider-->
+    <div class="videotitle">
+      <img src="Media/MusicVidePageFiles/Pictures/title-videos.png">
+    </div>
+    <section class="container">
+      <div class="testimonial mySwiper">
+        <div class="testi-content swiper-wrapper">
+          <div class="slides swiper-slide">
+            <div class="video">
+              <video width="950" height="534" id="shutdown"><source src="Media/MusicVidePageFiles/Video/BLACKPINK - Shut Down M V.mp4" type="video/mp4" />
+                <script>
+                    var myFP = fluidPlayer(
+                        'shutdown',	{
+                    "layoutControls": {
+                        "controlBar": {
+                            "autoHideTimeout": 5,
+                            "animated": true,
+                            "autoHide": false,
+                            "playbackRates": [
+                                "x2",
+                                "x1.5",
+                                "x1",
+                                "x0.5"
+                            ]
+                        },
+                        "htmlOnPauseBlock": {
+                            "html": "",
+                            "height": null,
+                            "width": null
+                        },
+                        "autoPlay": false,
+                        "mute": true,
+                        "allowTheatre": true,
+                        "playPauseAnimation": true,
+                        "playbackRateEnabled": false,
+                        "allowDownload": false,
+                        "playButtonShowing": true,
+                        "fillToContainer": false,
+                        "primaryColor": "#f5a6ba;",
+                    "posterImage": "Media/MusicVidePageFiles/Pictures/Shutdown Thumnail.jpeg"
+                    },
+                    "vastOptions": {
+                        "adList": [],
+                        "adCTAText": false,
+                        "adCTATextPosition": ""
+                    }
+                });
+                </script>
+            </div>
+          </div>
+
+          <div class="slides swiper-slide">
+            <div class="video">
+              <video width="950" height="534" id="pinkvenom"><source src="Media/MusicVidePageFiles/Video/BLACKPINK - Pink Venom M V.mp4" type="video/mp4" />
+                <script>
+                    var myFP = fluidPlayer(
+                        'pinkvenom',	{
+                    "layoutControls": {
+                        "controlBar": {
+                            "autoHideTimeout": 5,
+                            "animated": true,
+                            "autoHide": false,
+                            "playbackRates": [
+                                "x2",
+                                "x1.5",
+                                "x1",
+                                "x0.5"
+                            ]
+                        },
+                        "htmlOnPauseBlock": {
+                            "html": "",
+                            "height": null,
+                            "width": null
+                        },
+                        "autoPlay": false,
+                        "mute": true,
+                        "allowTheatre": true,
+                        "playPauseAnimation": true,
+                        "playbackRateEnabled": false,
+                        "allowDownload": false,
+                        "playButtonShowing": true,
+                        "fillToContainer": false,
+                        "primaryColor": "#f5a6ba;",
+                    "posterImage": "Media/MusicVidePageFiles/Pictures/Pink Venom Thumbnail.jpg"
+                    },
+                    "vastOptions": {
+                        "adList": [],
+                        "adCTAText": false,
+                        "adCTATextPosition": ""
+                    }
+                });
+                </script>
+            </div>
+          </div>
+
+          <div class="slides swiper-slide">
+            <div class="video">
+              <video width="950" height="534" id="flower"><source src="Media/MusicVidePageFiles/Video/JISOO - (FLOWER) M V.mp4" type="video/mp4" />
+                <script>
+                    var myFP = fluidPlayer(
+                        'flower',	{
+                    "layoutControls": {
+                        "controlBar": {
+                            "autoHideTimeout": 5,
+                            "animated": true,
+                            "autoHide": false,
+                            "playbackRates": [
+                                "x2",
+                                "x1.5",
+                                "x1",
+                                "x0.5"
+                            ]
+                        },
+                        "htmlOnPauseBlock": {
+                            "html": "",
+                            "height": null,
+                            "width": null
+                        },
+                        "autoPlay": false,
+                        "mute": true,
+                        "allowTheatre": true,
+                        "playPauseAnimation": true,
+                        "playbackRateEnabled": false,
+                        "allowDownload": false,
+                        "playButtonShowing": true,
+                        "fillToContainer": false,
+                        "primaryColor": "#f5a6ba;",
+                    "posterImage": ""
+                    },
+                    "vastOptions": {
+                        "adList": [],
+                        "adCTAText": false,
+                        "adCTATextPosition": ""
+                    }
+                });
+                </script>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- Swiper JS -->
+    <script src="Javascript/swiper-bundle.min.js"></script>
+    <!-- JavaScript -->
+    <script src="Javascript/musicvideo.js"></script>
+
+    <div class="viewall">
+      <a class="view_all" target="0" href="https://youtube.com/playlist?list=PLNF8K9Ddz0kKfujG6blfAxngYh_C66C_q">VIEW ALL</a>
+    </div>
+<!--End of video slider-->
+    <footer>
+      <a target="0" href="https://www.blackpinkmusic.com/"><img class="BL" src="Media\AboutPageFiles\Blackpink_logo.png" alt="BLACKPINK Logo" height="25"></a>
+      <a target="0" href="https://www.ygfamily.com/"><img class="BL" src="Media\AboutPageFiles\YG_Entertainment-logo.png" alt="YG Logo" height="25"></a>
+        <p>&copy;2023 BLACKPINK | YG ENTERTAINMENT ALL RIGHTS RESERVED <br> LUZANO, CHRISTIAN NICO, AYALA, MELISSA </p>
+    
+
+  </body>
+</html>

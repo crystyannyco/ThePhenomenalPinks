@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css\members.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="Media\HomePageFiles\BLACKPINK CROWN ICON.png">
+    <title>The Phenomenal Pinks: BLACKPINK</title>
+</head>
+<body>
+<!--NAVIGATION BAR-->
+    <nav> 
+        <div class="navbar">
+            <ul class="nav-links"> 
+                <li><a class="mv" style="color: #ffffff; background-color: #f5a6ba;" href="members.html">THE PINKS</a>
+                    <ul class="drop-menu"> 
+                        <li><a onclick="showPanel(1,'#d783ae')">LISA</a></li>
+                        <li><a onclick="showPanel(2,'#d783ae')">ROSÉ</a></li>
+                        <li><a onclick="showPanel(3,'#d783ae')">JENNIE</a></li>
+                        <li><a onclick="showPanel(4,'#d783ae')">JISOO</a></li>
+                    </ul>
+                </li>
+                <li><a href="album.html">ALBUM</a></li>
+                    <div class="logo"><a href="index.html"><img src="Media/HomePageFiles/logo.png" alt="logo" width="210"></a></div>               
+                    <li><a href="musicvideo.html">MUSIC VIDEO</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </div>
+    </nav> 
+    <script>
+        const nav= document.querySelector('nav');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY >= 100) {
+                nav.classList.add('active_nav');
+            } else {
+                nav.classList.remove('active_nav');
+            }
+        })
+    </script>
+<!--End of NavBar-->
+
+<header>
+    <img loop class="memberbg"src="Media\MembersFiles\Pictures\Background.jpeg">
+</header>
+<section class="sect1">
+<section class="member_sec">
+    <div class="tab_members">
+        <div class="tabContainer">
+            <div class="buttonContainer">
+                <button onclick="showPanel(0,'#f5a6ba')">BLACKPINK</button>
+                <button onclick="showPanel(1,'#f5a6ba')">LISA</button>
+                <button onclick="showPanel(2,'#f5a6ba')">ROSÉ</button>
+                <button onclick="showPanel(3,'#f5a6ba')">JENNIE</button>
+                <button onclick="showPanel(4,'#f5a6ba')">JISOO</button>
+            </div>
+            <div class="tabPanel">
+                <div class="containerbg">
+                    <div class="tabheader0"><h1>BLACKPINK</h1></div>
+                    <video loop autoplay muted class="bgbp" src="Media/MembersFiles/Videos/BLACKPINK - Pink Venom Concept Teaser.mp4"></video>
+                </div>
+                <div class="panel">
+                    <div class="panelimg">
+                        <img loop autoplay muted class="bpbg" src="Media/MembersFiles/Pictures/blackpink-pink-venom-kpop-4k-wallpaper-uhdpaper.com-80@1@i.jpg" alt="https://image-1.uhdpaper.com/wallpaper/blackpink-pink-venom-kpop-4k-wallpaper-uhdpaper.com-80@1@i.jpg">
+                    </div>
+                    <div class="panelcontent">
+                        <h1>BLACKPINK</h1>
+                        <div class="musicplatforms">
+                            <a class="mlogo" target="0" href="https://www.facebook.com/BLACKPINKOFFICIAL/"><i class="fa-brands fa-facebook"></i></a>
+                            <a class="mlogo" target="0"href="https://www.tiktok.com/@bp_tiktok"><i class="fa-brands fa-tiktok"></i></a>
+                            <a class="mlogo" target="0" href="https://www.instagram.com/blackpinkofficial/"><i class="fa-brands fa-instagram"></i></a>
+                            <a class="mlogo" target="0" href="https://twitter.com/BLACKPINK"><i class="fa-brands fa-twitter"></i></a>
+                          </div>
+                        <p><b>BLACKPINK</b>, YG Entertainment’s 4-member Korean female group consisting of <b>JISOO, JENNIE, ROSÉ,</b> and <b>LISA</b>, released their debut album <b>"SQUARE ONE"</b> in August 2016.Soon after <b>"SQUARE TWO"</b> and <b>"AS IF IT’S YOUR LAST"</b> were released and dominated the music charts which drew great attention.
+                            <br> <br>
+                            In June 2018, they released their 1st EP <b>"SQUARE UP"</b> and their title song <b>"DDU-DU DDU-DU"</b> M/V broke many records and was acknowledged as the first K-Pop group to earn 1 billion views on YouTube. In April 2019, with their successful release of their 2nd EP <b>"KILL THIS LOVE"</b>, they’ve become the first K-Pop girl group to perform at the <b>Coachella Music Festival</b> , while wrapping up their 2019 World Tour [IN YOUR AREA] held across 23 cities of 4 continents.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="lisa" class="tabPanel">
+                <div class="containerbg">
+                    <div class="tabheader1"><h1>LISA</h1></div>
+                    <video loop autoplay muted preload="auto" class="bg" src="Media/MembersFiles/Videos/Lisa - Pink Venom Concept Teaser - Made with Clipchamp.mp4"></video>
+                </div>
+                <div class="panel">
+                    <div class="panelimg">
+                        <img class="lisabg" src="Media/MembersFiles/Pictures/lisa-blackpink-lovesick-girls-uhdpaper.com-8K-8.1258.jpg" alt="https://image-1.uhdpaper.com/b/pc-4k/lisa-lalisa-photo-4k-wallpaper-3840x2160-uhdpaper.com-701.1_b.jpg">
+                    </div>
+                    <div class="panelcontent">
+                        <h1>LISA</h1>
+                        <div class="lisamusicplatforms">
+                            <a class="lisamlogo" target="0" href="https://www.instagram.com/lalalalisa_m/"><i class="fa-brands fa-instagram"></i></a>
+                            <a class="lisamlogo" target="0" href="https://www.youtube.com/@lalalalisa_m"><i class="fa-brands fa-youtube"></i></a>
+                          </div>
+                        <p><b>Lalisa Manobal</b> (birth name: <b>Pranpriya Manobal</b>, born March 27, 1997 in Buriram Province, Thailand) better known by her stage name, Lisa, is a Thai rapper, singer and dancer, based in South Korea. She is a member of Blackpink.
+                            <br><br>
+                            Her birth name is <b><i>Pranpriya Manobal</i></b>, she later legally changed her first name to <b>Lalisa</b>. Her ethnicity and nationality is Thai. Lisa's biological parents' names have not been released to the public, her stepfather is Marco Bruschweiler, a Swiss renowned chef, active in Thailand.
+                            <br><br>
+                            In 2016, she took her stage name of Lisa and became the <b>main dancer, lead rapper</b>, a <b>supporting vocalist</b> and the <b>youngest</b> (aka maknae in the k-pop industry) of K-pop girl group, Blackpink, which debuted on August 8, 2016. Lisa is also the first non-Korean YG Entertainment artist.
+                        </p>
+                    </div>
+                </div>
+            </div>
+           
+            <div id="rose" class="tabPanel">
+                <div class="containerbg">
+                    <div class="tabheader2"><h1>ROSÉ</h1></div>
+                    <video loop autoplay muted preload="auto" class="bg" src="Media/MembersFiles/Videos/Rose - Pink Venom Concept Teaser - Made with Clipchamp.mp4"></video>
+                </div>
+                <div class="panel">
+                    <div class="panelimg">
+                        <img class="rosebg" src="Media/MembersFiles/Pictures/rose-blackpink-lovesick-girls-uhdpaper.com-8K-8.1260.jpg" alt="https://image7.uhdpaper.com/wallpaper/rose-on-the-ground-blackpink-uhdpaper.com-4K-7.3320.jpg">
+                    </div>
+                    <div class="panelcontent">
+                        <h1>ROSÉ</h1>
+                        <div class="rosemusicplatforms">
+                            <a class="rosemlogo" target="0" href="https://www.instagram.com/roses_are_rosie/"><i class="fa-brands fa-instagram"></i></a>
+                            <a class="rosemlogo" target="0" href="https://www.youtube.com/@roses_are_rosie"><i class="fa-brands fa-youtube"></i></a>
+                            <a class="rosemlogo" target="0"href="https://www.tiktok.com/@roses_are_rosie"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                        <p><b>Roseanne Chae-young Park </b>(born February 11, 1997 in Auckland, New Zealand) better known as <b>Rosé</b>, is an Australian singer based in South Korea. She is a member of Blackpink.
+                            <br><br>
+                            Born as <i><b>Roseanne Park</b></i> in Auckland, New Zealand, she was given the Korean name of <b>Park Chae-young</b> and grew up in Melbourne, Australia.
+                            <br><br>
+                            As a child, Rosé already had a passion for <b>singing</b>. She was a part of her church's choir in Australia. When she found out that YG Entertainment were holding their auditions in Sydney, Australia back in 2012, she quickly made her way there from Melbourne to audition. Rose' ranked first in the auditions became a part of YG Entertainment on the same day. After training for four years, YG finally made her the <b> main vocalist</b> and <b>lead dancer of Blackpink</b>. She was the last member to be revealed in the band. She attended Canterbury Girls' Secondary College in Melbourne, Australia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="jennie" class="tabPanel">
+                <div class="containerbg">
+                    <div class="tabheader3"><h1>JENNIE</h1></div>
+                    <video loop autoplay muted preload="auto" class="bg" src="Media/MembersFiles/Videos/Jennie - Pink Venom Concept Teaser - Made with Clipchamp.mp4"></video>
+                </div>
+                <div class="panel">
+                    <div class="panelimg">
+                        <img class="jenniebg" src="Media/MembersFiles/Pictures/jennie-blackpink-lovesick-girls-uhdpaper.com-8K-8.1254.jpg" alt="https://image8.uhdpaper.com/wallpaper/jennie-blackpink-lovesick-girls-uhdpaper.com-8K-8.1254.jpg">
+                    </div>
+                    <div class="panelcontent">
+                        <h1>JENNIE</h1>
+                        <div class="jenniemusicplatforms">
+                            <a class="jenniemlogo" target="0" href="https://www.instagram.com/jennierubyjane/"><i class="fa-brands fa-instagram"></i></a>
+                            <a class="jenniemlogo" target="0" href="https://www.youtube.com/@jennierubyjane"><i class="fa-brands fa-youtube"></i></a>
+                          </div>
+                        <p><b>Jennie Kim,</b> known as <b>Jennie</b> , was born in Cheongdam-dong, South Korea on January 16, 1996. Jennie studied abroad in New Zealand. She joined YG in August 2010.
+                            <br><br>
+                            <b>Jennie Kim </b> was born in Cheongdam-dong, South Korea and grew up in Auckland, New Zealand until her high-school years, when she moved back to South Korea. After she settled in Seoul, she immediately became a trainee of YG Entertainment in 2010. She was raised abroad, so she speak fluent English. She is also fluent in Korean and Japanese. She was only 14 when she joined YG, but she has proved that she has much potential. She has also collaborated with her fellow YG artists before she was cast as a member of Blackpink. Jennie is said to be the possible leader of the group, but after the band debuted, there was no leader because of their similar ages.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="jisoo" class="tabPanel">
+                <div class="containerbg">
+                    <div class="tabheader4"><h1>JISOO</h1></div>
+                    <video loop autoplay muted preload="auto" class="bg" src="Media/MembersFiles/Videos/Jisoo - Pink Venom Concept Teaser - Made with Clipchamp.mp4"></video>
+                </div>
+                <div class="panel">
+                    <div class="panelimg">
+                        <img class="jisoobg" src="Media/MembersFiles/Pictures/jisoo-blackpink-lovesick-girls-uhdpaper.com-8K-8.1256.jpg" alt="https://image-0.uhdpaper.com/wallpaper/jisoo-flower-me-4k-wallpaper-uhdpaper.com-713@0@i.jpg">
+                    </div>
+                    <div class="panelcontent">
+                        <h1>JISOO</h1>
+                        <div class="jisoomusicplatforms">
+                            <a class="jisoomlogo" target="0" href="https://www.instagram.com/sooyaaa__/"><i class="fa-brands fa-instagram"></i></a>
+                            <a class="jisoomlogo" target="0" href="https://www.youtube.com/@sooyaaa__"><i class="fa-brands fa-youtube"></i></a>
+                          </div>
+                        <p><b>Jisoo</b> was born on January 3, 1995 in Gunpo. She's a member of <b>Blackpink</b>.
+                            <br><br>
+                            She became a YG Entertainment trainee in August 2011 & trained for 5 years. In August 2016, she became a member of Blackpink, as a <b>lead vocalist</b> & <b>visualist</b> in the group.
+                            <br><br>
+                            Before she becoming a YG trainee, she was known by many for her beauty. She was quite popular in school because of her looks & talents. She used to study at the School Of Performing Arts High School. She eventually transferred schools when her family moved to Seoul.
+                            <br><br>
+                            In 2012, she was revealed through the "Who's That Girl?" teaser by YG Entertainment. That was followed w/ 2 photos in January 2013.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <script src="Javascript/member.js"></script>     
+    </div>
+</section>
+</section>
+<footer>
+    <a target="0" href="https://www.blackpinkmusic.com/"><img class="BL" src="Media\AboutPageFiles\Blackpink_logo.png" alt="BLACKPINK Logo" height="25"></a>
+<a target="0" href="https://www.ygfamily.com/"><img class="BL" src="Media\AboutPageFiles\YG_Entertainment-logo.png" alt="YG Logo" height="25"></a>
+    <p>&copy;2023 BLACKPINK | YG ENTERTAINMENT ALL RIGHTS RESERVED <br> LUZANO, CHRISTIAN NICO, AYALA, MELISSA </p>
+</footer>
+</body>
+</html>
+
